@@ -1,0 +1,125 @@
+:root {
+  --white-color: #eee;
+  --green-color: #00d300;
+}
+body {
+  background-color: rgb(25, 5, 44);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white-color);
+  user-select: none;
+}
+.green {
+  color: var(--green-color);
+}
+#dev-wallet {
+  font-size: small;
+  cursor: pointer;
+  user-select: text;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  margin: 6px 2px;
+}
+header,
+footer {
+  width: 100%;
+}
+header p,
+footer p {
+  opacity: 0.5;
+}
+footer p {
+  margin-left: 50vw;
+  margin-bottom: 0;
+  font-size: x-small;
+}
+.title {
+  font-weight: 600;
+}
+
+.title span {
+  border: 1px solid var(--green-color);
+  font-size: xx-small;
+  padding: 2px;
+}
+#ethForm {
+  padding: 16px;
+  border-radius: 8px;
+}
+p {
+  max-width: 95vw;
+}
+input,
+select {
+  border: none;
+  color: var(--white-color);
+}
+option {
+  background-color: rgb(25, 5, 44);
+}
+.input-value {
+  background-color: #eeeeee00;
+  border: 1px solid var(--white-color);
+  margin: 18px;
+  border-radius: 8px;
+  padding: 2px 6px;
+  position: relative;
+}
+.input-value input,
+select {
+  background-color: #eeeeee00;
+  width: 100%;
+  outline: none;
+}
+.input-value label {
+  position: absolute;
+  top: -25%;
+  left: 5%;
+  background-color: rgb(25, 5, 44);
+  padding: 0 4px;
+}
+#ethForm button {
+  border: 1px solid var(--white-color);
+  background-color: #eeeeee00;
+  color: var(--white-color);
+  padding: 8px 48px;
+  font-weight: bolder;
+  border-radius: 6px;
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+}
+#ethForm button:active {
+  border: 1px solid var(--green-color);
+  color: var(--green-color);
+}
+.list-faucet a {
+  text-decoration: none;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  padding: 2px;
+  font-family: monospace;
+  border-radius: 4px;
+}
+.notify {
+  position: fixed;
+  top: 35px;
+  right: 10%;
+  width: max-content;
+  max-width: 90vw;
+  padding: 5px 8px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25, 5, 44);
+  border: 1px solid var(--white-color);
+}

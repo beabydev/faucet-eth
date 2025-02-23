@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ETH Sepolia | Faucet Ethereum Sepolia platform !</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <p>Powered by temisdev</p>
+    </header>
+    <p class="title">Ethereum Sepolia Faucet <span>BETA</span></p>
+    <p>
+      <span class="green">&#9851;</span>Verify the wallet by interacting 1 time
+      with
+      <span class="green" id="dev-wallet">
+        0xf9D5bb63E4BA3B781744d4AFacAE62dbAAAae86E</span
+      >
+      Deposit any currency, including all testnets.
+    </p>
+    <div class="notify"></div>
+    <div class="Form-container">
+      <p>
+        Get free Sepolia ETH sent directly to your wallet. Brought to you by
+        Temisdev
+      </p>
+      <form id="ethForm">
+        <div class="wellet-address input-value">
+          <label for="wallet">ETH wallet</label><br />
+          <input
+            id="wallet"
+            type="text"
+            placeholder='Enter your ETH wallet address start with "0x"'
+          />
+        </div>
+        <div class="network-value input-value">
+          <label for="network">Select Network</label><br />
+          <select id="network" name="network">
+            <option value="sETH">Ethereum Sepolia (0.1 ETH)</option>
+            <option value="hETH">Ethereum Holesky (1 ETH)</option>
+            <option value="bETH">Base Sepolia (0.1 ETH)</option>
+            <option value="oETH">OP Sepolia (0.1 ETH)</option>
+            <option value="aETH">Arbitrum Sepolia (0.5 ETH)</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <p>
+        <span class="green">Note: </span> We securely handle the provided wallet
+        address while processing your request. This data is not used by any
+        other Temisdev services.
+      </p>
+    </div>
+    <ul class="list-faucet">
+      <li><a href="">Binance Smart Chain Testnet</a></li>
+      <li><a href="">Solana Testnet</a></li>
+      <li><a href="">Mantle Testnet</a></li>
+      <li><a href="">Polygon Testnet</a></li>
+      <li><a href="">zkSync Testnet</a></li>
+      <li><a href="">Solana Devnet</a></li>
+      <li><a href="">Monad Testnet</a></li>
+      <li><a href="">Mango Testnet</a></li>
+    </ul>
+    <footer>
+      <p>&#169; Owned by Temisdev</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
